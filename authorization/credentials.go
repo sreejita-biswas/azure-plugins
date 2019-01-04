@@ -2,29 +2,27 @@ package authorization
 
 import (
 	"errors"
-	"flag"
 	"fmt"
 	"os"
 
+	"github.com/spf13/cobra"
 	"github.com/sreejita-biswas/azure-plugins/constants"
 )
 
 var (
-	authLocation   string
-	authType       int
-	clientID       string
-	tenantID       string
-	clientSecret   string
-	subscriptionID string
+	authLocation string
+	authType     int
+	clientID     string
+	tenantID     string
+	clientSecret string
 )
 
-func GetParameterValues() {
-	flag.IntVar(&authType, "auth_type", 1, "authentication type : 0 - Client Based , 1 - File Based Authentication, values other than 0 or 1  - In valid auth type")
-	flag.StringVar(&authLocation, "azure_auth_location", "", "path to the auth credential file we created before")
-	flag.StringVar(&clientID, "client_id", "", "ARM Client ID")
-	flag.StringVar(&tenantID, "tenant_id", "", "ARM Tenant ID")
-	flag.StringVar(&clientSecret, "secret", "", "ARM Client Secret")
-	flag.StringVar(&subscriptionID, "subscription", "", "ARM Subscription ID")
+func GetParameterValues(cmd *cobra.Command) {
+	cmd.Flags().IntVar(&authType, "auth_type", 1, "authentication type : 0 - Client Based , 1 - File Based Authentication, values other than 0 or 1  - In valid auth type")
+	cmd.Flags().StringVar(&authLocation, "azure_auth_location", "", "path to the auth credential file we created before")
+	cmd.Flags().StringVar(&clientID, "client_id", "", "ARM Client ID")
+	cmd.Flags().StringVar(&tenantID, "tenant_id", "", "ARM Tenant ID")
+	cmd.Flags().StringVar(&clientSecret, "secret", "", "ARM Client Secret")
 }
 
 func isFileBasedAuthentication() (bool, error) {

@@ -1,0 +1,60 @@
+builds:
+  # List of builds
+- # First Build
+  env:
+    - CGO_ENABLED=0
+  main: ./plugins/check-azurerm-core-usage/main.go
+  binary: bin/check-azurerm-core-usage
+- binary: bin/check-azurerm-cores-d-usage
+  main: ./plugins/check-azurerm-cores-d-usage/main.go
+- binary: bin/check-azurerm-cores-ds-usage
+  main: ./plugins/check-azurerm-cores-ds-usage/main.go
+- binary: bin/check-azurerm-cores-dsv2-usage
+  main: ./plugins/check-azurerm-cores-dsv2-usage/main.go
+- binary: bin/check-azurerm-cores-dv2-usage
+  main: ./plugins/check-azurerm-cores-dv2-usage/main.go
+- binary: bin/check-azurerm-cores-f-usage
+  main: ./plugins/check-azurerm-cores-f-usage/main.go
+- binary: bin/check-azurerm-cores-fs-usage
+  main: ./plugins/check-azurerm-cores-fs-usage/main.go
+
+  goos:
+    - darwin
+    - freebsd
+    - linux
+    - netbsd
+    - solaris
+    - windows
+  goarch:
+    - amd64
+    - 386
+    - arm
+    - arm64
+  goarm:
+    - 5
+    - 6
+    - 7
+  ignore:
+      # TODO: add freebsd/arm support to gopsutil
+    - goos: freebsd
+      goarch: arm
+
+checksum:
+  # You can change the name of the checksums file.
+  # Default is `{{ .ProjectName }}_{{ .Version }}_checksums.txt`.
+  name_template: "{{ .ProjectName }}_{{ .Version }}_sha256-checksums.txt"
+
+archive:
+  format: tar.gz
+  files:
+    - LICENSE
+    - README.md
+    - CHANGELOG.md
+  # You can change the name of the GitHub release.
+  # This is parsed with the Go template engine and the following variables
+  # are available:
+  # - ProjectName
+  # - Tag
+  # - Version (Git tag without `v` prefix)
+  # Default is ``
+  #name_template: "{{.ProjectName}}-v{{.Version}}"
