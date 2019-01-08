@@ -7,7 +7,7 @@ import (
 	"github.com/Azure/go-autorest/autorest"
 )
 
-func GetNetworkClient(subscription string, authorizer autorest.Authorizer) network.VirtualNetworkGatewaysClient {
+func GetVirtualNetworkClient(subscription string, authorizer autorest.Authorizer) network.VirtualNetworkGatewaysClient {
 	client := network.NewVirtualNetworkGatewaysClient(subscription)
 	client.Authorizer = authorizer
 	return client
@@ -27,6 +27,12 @@ func GetSubscriptionClient(subscription string, authorizer autorest.Authorizer) 
 
 func GetTopicClient(subscription string, authorizer autorest.Authorizer) servicebus.TopicsClient {
 	client := servicebus.NewTopicsClient(subscription)
+	client.Authorizer = authorizer
+	return client
+}
+
+func GetNetworkClient(subscription string, authorizer autorest.Authorizer) network.UsagesClient {
+	client := network.NewUsagesClient(subscription)
 	client.Authorizer = authorizer
 	return client
 }

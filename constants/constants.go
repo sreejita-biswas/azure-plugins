@@ -26,6 +26,18 @@ func GetUnitByUsageStatisticType(unit string) string {
 		return "FS Family Cores"
 	} else if unit == "standardDv2Family" {
 		return "Dv2 Family Cores"
+	} else if unit == "NetworkInterfaces" {
+		return "Network Interfaces"
+	} else if unit == "LoadBalancers" {
+		return "Load Balancers"
+	} else if unit == "NetworkSecurityGroups" {
+		return "Network Security Groups"
+	} else if unit == "PublicIPAddresses" {
+		return "Public IP Addresses"
+	} else if unit == "RouteTables" {
+		return "Route Tables"
+	} else if unit == "StaticPublicIPAddresses" {
+		return "Static IP Addresses"
 	}
 	return ""
 }
