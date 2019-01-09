@@ -38,6 +38,10 @@ func GetUnitByUsageStatisticType(unit string) string {
 		return "Route Tables"
 	} else if unit == "StaticPublicIPAddresses" {
 		return "Static IP Addresses"
+	} else if unit == "virtualMachines" {
+		return "VMs"
+	} else if unit == "VirtualNetworks" {
+		return "Virtual Networks"
 	}
 	return ""
 }
