@@ -17,6 +17,32 @@ builds:
   main: ./plugins/check-azurerm-cores-f-usage/main.go
 - binary: bin/check-azurerm-cores-fs-usage
   main: ./plugins/check-azurerm-cores-fs-usage/main.go
+- binary: bin/check-azurerm-load-balancers-usage
+  main: ./plugins/check-azurerm-load-balancers-usage/main.go
+- binary: bin/check-azurerm-network-interfaces-usage
+  main: ./plugins/check-azurerm-network-interfaces-usage/main.go
+- binary: bin/check-azurerm-network-security-groups-usage
+  main: ./plugins/check-azurerm-network-security-groups-usage/main.go
+- binary: bin/check-azurerm-public-ip-addresses-usage
+  main: ./plugins/check-azurerm-public-ip-addresses-usage/main.go
+- binary: bin/check-azurerm-route-tables-usage
+  main: ./plugins/check-azurerm-route-tables-usage/main.go
+- binary: bin/check-azurerm-service-bus-subscription
+  main: ./plugins/check-azurerm-service-bus-subscription/main.go
+- binary: bin/check-azurerm-service-bus-topic-size
+  main: ./plugins/check-azurerm-service-bus-topic-size/main.go
+- binary: bin/check-azurerm-static-public-ip-addresses-usage
+  main: ./plugins/check-azurerm-static-public-ip-addresses-usage/main.go
+- binary: bin/check-azurerm-virtual-machines-usage
+  main: ./plugins/check-azurerm-virtual-machines-usage/main.go
+- binary: bin/check-azurerm-virtual-network-gateway-connected
+  main: ./plugins/check-azurerm-virtual-network-gateway-connected/main.go
+- binary: bin/check-azurerm-virtual-network-gateway-failure-connected
+  main: ./plugins/check-azurerm-virtual-network-gateway-failure-connected/main.go
+- binary: bin/check-azurerm-virtual-networks-usage
+  main: ./plugins/check-azurerm-virtual-networks-usage/main.go
+- binary: bin/metric-azurerm-service-bus-subscription-message-count
+  main: ./plugins/metric-azurerm-service-bus-subscription-message-count/main.go
 
   goos:
     - darwin
