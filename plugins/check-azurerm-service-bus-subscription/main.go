@@ -95,13 +95,14 @@ func checkServiceBusSubscription() {
 		return
 	}
 	client := clients.GetSubscriptionClient(utils.GetSubscription(), authorizer)
-	result, err := utils.GetServiceBusresult(client)
+	result, _ := utils.GetServiceBusresult(client)
 
-	if err != nil {
-		return
-	}
+	// if err != nil {
+	// 	fmt.Println("Error while calling Azure Api,", err)
+	// 	return
+	// }
 
-	if result == nil {
+	if result == nil || result.SBSubscriptionProperties == nil {
 		message = fmt.Sprintf("CRITICAL:Subscription '%s' not found in topic '%s'", utils.GetSubscriptionName(), utils.GetTopic())
 	} else {
 		message = fmt.Sprintf("OK:Subscription '%s' was found in topic '%s'", utils.GetSubscriptionName(), utils.GetTopic())

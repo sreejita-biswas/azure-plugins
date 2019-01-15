@@ -27,7 +27,7 @@ var (
 
 func GetPluginSpecificParameters(cmd *cobra.Command) {
 	authorization.GetParameterValues(cmd)
-	cmd.Flags().StringVar(&location, "location", "", "Azure Location (e.g. westeurope/eastus2)")
+	cmd.Flags().StringVar(&location, "location", "southindia", "Azure Location (e.g. westeurope/eastus2)")
 	cmd.Flags().Float64Var(&warning, "warning", 80, "Warning Percentage threshold for filter")
 	cmd.Flags().Float64Var(&critical, "critical", 90, "Critical Percentage threshold for filter")
 	cmd.Flags().StringVar(&subscription, "subscription", "", "ARM Subscription ID")

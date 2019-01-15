@@ -18,7 +18,7 @@ var (
 )
 
 func GetParameterValues(cmd *cobra.Command) {
-	cmd.Flags().IntVar(&authType, "auth_type", 1, "authentication type : 0 - Client Based , 1 - File Based Authentication, values other than 0 or 1  - In valid auth type")
+	cmd.Flags().IntVar(&authType, "auth_type", 0, "authentication type : 0 - Client Based , 1 - File Based Authentication, values other than 0 or 1  - In valid auth type")
 	cmd.Flags().StringVar(&authLocation, "azure_auth_location", "", "path to the auth credential file we created before")
 	cmd.Flags().StringVar(&clientID, "client_id", "", "ARM Client ID")
 	cmd.Flags().StringVar(&tenantID, "tenant_id", "", "ARM Tenant ID")

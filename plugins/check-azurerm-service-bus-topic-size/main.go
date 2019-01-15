@@ -108,7 +108,7 @@ func checkServiceBusTopicSize() {
 	result, err := client.Get(context.Background(), utils.GetResourceGroup(), utils.GetNamespace(), utils.GetTopic())
 
 	if err != nil {
-		fmt.Errorf("Error while calling Azure Service Bus Topic Api,", err)
+		fmt.Println("Error while calling Azure Service Bus Topic Api,", err)
 		return
 	}
 
@@ -126,6 +126,6 @@ func checkServiceBusTopicSize() {
 	} else if percentageused >= utils.GetWarning() {
 		fmt.Println("WARNING:", message)
 	} else {
-		fmt.Println("OK", message)
+		fmt.Println("OK:", message)
 	}
 }

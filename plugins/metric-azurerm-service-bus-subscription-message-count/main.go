@@ -129,6 +129,6 @@ func checkServiceBusSubscription() {
 
 	count = *result.MessageCount
 	timestamp := time.Now()
-	message = fmt.Sprintf("%s.%s.%s.%s.%s.%d", customScheme, utils.GetResourceGroup(), utils.GetNamespace(), utils.GetTopic(), utils.GetSubscriptionName(), "message_count")
-	fmt.Println(message, "-", count, "timestamp :", timestamp.Format(time.RFC3339))
+	message = fmt.Sprintf("%s.%s.%s.%s.%s.%s-%d - %s:%v", customScheme, utils.GetResourceGroup(), utils.GetNamespace(), utils.GetTopic(), utils.GetSubscriptionName(), "message_count", count, "timestamp :", timestamp.Format(time.RFC3339))
+	fmt.Println(message)
 }

@@ -93,7 +93,7 @@ func checkVirtualNetworkGatewayUsage() {
 	result, err := client.Get(context.Background(), resourceGroupName, gatewayName)
 
 	if err != nil {
-		fmt.Errorf("Error while calling Azure API,", err)
+		fmt.Println("Error while calling Azure API,", err)
 		return
 	}
 
