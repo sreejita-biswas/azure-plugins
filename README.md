@@ -1,8 +1,7 @@
 
+# azure-plugins
 
 TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-plugins.svg?branch=develop)](https://travis-ci.org/sreejita-biswas/azure-plugins)
-
-# azure-plugins
 
 ## Functionality
 
@@ -69,7 +68,7 @@ TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-
                            --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                            --location="eastus2" --warning=80 --critical=90
                            
-Sample Output : ``` OK: Current usage:1 of 4 Cores ```         
+Sample Output : OK: Current usage:1 of 4 Cores         
 ```
 
 **check-azurerm-cores-d-usage**
@@ -86,7 +85,7 @@ Sample Output : ``` OK: Current usage:1 of 4 Cores ```
                               --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                               --location="eastus2" --warning=80 --critical=90
                               
-Sample Output : ``` CRITICAL: Current usage:4 of 4 D Family Cores ```    
+Sample Output : CRITICAL: Current usage:4 of 4 D Family Cores   
 ```
 
 **check-azurerm-cores-ds-usage**
@@ -102,7 +101,8 @@ Sample Output : ``` CRITICAL: Current usage:4 of 4 D Family Cores ```
                                --secret="00000000-0000-0000-0000-000000000000"
                                --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                --location="eastus2" --warning=80 --critical=90
-OK: Current usage:0 of 4 DS Family Cores                              
+                               
+Sample Output : OK: Current usage:0 of 4 DS Family Cores                              
 ```
 
 **check-azurerm-cores-dsv2-usage**
@@ -118,7 +118,8 @@ OK: Current usage:0 of 4 DS Family Cores
                                  --secret="00000000-0000-0000-0000-000000000000"
                                  --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                  --location="eastus2" --warning=80 --critical=90
-CRITICAL: Current usage:4 of 4 D Family Cores                                 
+                                 
+Sample Output : OK: Current usage:0 of 4 DS Family Cores                                     
 ```
 
 **check-azurerm-cores-dv2-usage**
@@ -134,6 +135,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                 --secret="00000000-0000-0000-0000-000000000000"
                                 --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                 --location="eastus2" --warning=80 --critical=90
+                                
+Sample Output : WARNING: Current usage:85 of 100 DSv2 Family Cores                      
 ```
 
 **check-azurerm-cores-f-usage**
@@ -149,6 +152,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                  --secret="00000000-0000-0000-0000-000000000000"
                                  --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                  --location="eastus2" --warning=80 --critical=90
+
+Sample Output : OK: Current usage:0 of 4 F Family Cores
 ```
 
 **check-azurerm-cores-fs-usage**
@@ -164,6 +169,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                  --secret="00000000-0000-0000-0000-000000000000"
                                  --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                  --location="eastus2" --warning=80 --critical=90
+ 
+Sample Output : OK: Current usage:1 of 6 FS Family Cores
 ```
 
 **check-azurerm-load-balancers-usage**
@@ -179,6 +186,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                      --secret="00000000-0000-0000-0000-000000000000"
                                      --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                      --location="eastus2" --warning=80 --critical=90
+                                     
+Sample Output : OK: Current usage:20 of 1000 Load Balancers                                   
 ```
 
 **check-azurerm-network-interfaces-usage**
@@ -194,6 +203,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                          --secret="00000000-0000-0000-0000-000000000000"
                                          --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                          --location="eastus2" --warning=80 --critical=90
+
+Sample Output : OK: Current usage:57 of 65536 Network Interfaces
 ```
 
 **check-azurerm-network-security-groups-usage**
@@ -209,6 +220,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                               --secret="00000000-0000-0000-0000-000000000000"
                                               --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                               --location="eastus2" --warning=80 --critical=90
+                                              
+Sample Output : OK: Current usage:100 of 5000 Network Security Groups                                            
 ```
 
 **check-azurerm-public-ip-addresses-usage**
@@ -224,6 +237,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                           --secret="00000000-0000-0000-0000-000000000000"
                                           --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                           --location="eastus2" --warning=80 --critical=90
+                                          
+Sample Output : OK: Current usage:100 of 5000 Network Security Groups                                         
 ```
 
 **check-azurerm-static-public-ip-addresses-usage**
@@ -239,6 +254,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                                  --secret="00000000-0000-0000-0000-000000000000"
                                                  --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                                  --location="eastus2" --warning=80 --critical=90
+                                                 
+Sample Output : OK: Current usage:1 of 1000 Public IP Addresses                                                  
 ```
 
 **check-azurerm-route-tables-usage**
@@ -252,6 +269,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                    --secret="00000000-0000-0000-0000-000000000000"
                                    --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                    --location="eastus2" --warning=80 --critical=90
+                                   
+Sample Output : OK: Current usage:23 of 200 Route Tables                                        
 ```
 
 **check-azurerm-service-bus-subscription**
@@ -278,6 +297,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                            --namespace="namespace"
                            --topic="topic"
                            --subscriptionName="subscriptionName"
+                           
+Sample Output : CRITICAL:Subscription 'FreeTrial' not found in topic 'hello'                        
 ```
 
 **check-azurerm-service-bus-topic-size**
@@ -307,6 +328,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                            --topic="topic"
                            --warning=60
                            --critical=80
+                           
+Sample Output : OK: Current size of topic 'test-topic' is NaN                         
 ```
 
 **check-azurerm-virtual-machines-usage**
@@ -320,8 +343,9 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                        --secret="00000000-0000-0000-0000-000000000000"
                                        --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                        --location="eastus2" --warning=80 --critical=90
+   
+Sample Output : OK: Current usage:1 of 10000 VMs       
 ```
-
 
 **check-azurerm-virtual-network-gateway-connected**
 ```
@@ -335,6 +359,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                --secret="00000000-0000-0000-0000-000000000000"
                                --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                --resource_group="resourcegroup" --name="gatewayname"
+                               
+Sample Output : OK: Current usage:1 of 10000 VMs                              
 ```
 
 **check-azurerm-virtual-network-gateway-failover-connected**
@@ -369,6 +395,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                                        --secret="00000000-0000-0000-0000-000000000000"
                                        --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                        --location="eastus2" --warning=80 --critical=90
+                                       
+Sample Output : OK: Current usage:2 of 1000 Virtual Networks                                  
 ```
 
 **metric-azurerm-service-bus-subscription-message-count**
@@ -406,7 +434,8 @@ CRITICAL: Current usage:4 of 4 D Family Cores
                            --topic="topic"
                            --subscription_name="subscriptionName"
                            --coustom_scheme="foo"
-```
+                           
+Sample Output : test.testing-azure.test-azure-bus.test-topic.sub.message_count-0 - timestamp ::2019-01-15T16:50:22+05:30    ```
 
 ## Authentication Setup
 ```
