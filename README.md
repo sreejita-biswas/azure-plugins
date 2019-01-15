@@ -68,6 +68,8 @@ TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-
                            --secret="00000000-0000-0000-0000-000000000000"
                            --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                            --location="eastus2" --warning=80 --critical=90
+                           
+Sample Output : ``` OK: Current usage:1 of 4 Cores ```         
 ```
 
 **check-azurerm-cores-d-usage**
@@ -83,6 +85,8 @@ TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-
                               --secret="00000000-0000-0000-0000-000000000000"
                               --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                               --location="eastus2" --warning=80 --critical=90
+                              
+Sample Output : ``` CRITICAL: Current usage:4 of 4 D Family Cores ```    
 ```
 
 **check-azurerm-cores-ds-usage**
@@ -98,6 +102,7 @@ TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-
                                --secret="00000000-0000-0000-0000-000000000000"
                                --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                --location="eastus2" --warning=80 --critical=90
+OK: Current usage:0 of 4 DS Family Cores                              
 ```
 
 **check-azurerm-cores-dsv2-usage**
@@ -113,6 +118,7 @@ TravisCI: [![TravisCI Build Status](https://travis-ci.org/sreejita-biswas/azure-
                                  --secret="00000000-0000-0000-0000-000000000000"
                                  --subscription="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234"
                                  --location="eastus2" --warning=80 --critical=90
+CRITICAL: Current usage:4 of 4 D Family Cores                                 
 ```
 
 **check-azurerm-cores-dv2-usage**
