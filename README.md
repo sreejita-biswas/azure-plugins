@@ -437,7 +437,8 @@ Sample Output : OK: Current usage:2 of 1000 Virtual Networks
                            
 Sample Output : test.testing-azure.test-azure-bus.test-topic.sub.message_count-0 - timestamp ::2019-01-15T16:50:22+05:30    ```
 
-## Authentication Setup
+**Authentication Setup**
+
 ```
 Two types of Authentication supported -
 1. Credential based authentication : Either provide tenant_id,client_id,secret and location as the command line arguments or set three environment variables AZURE_TENANT_ID, AZURE_CLIENT_ID,AZURE_CLIENT_SECRET and AZURE_AUTH_LOCATION as below
@@ -457,7 +458,9 @@ export AZURE_AUTH_LOCATION=eastus2
 "resourceManagerEndpointUrl":"https://www.xyz.com"
 }
 ```
-## Azure Account Setup
+
+**Azure Account Setup**
+
 ```
 - Step 1: Create an Azure Account
 - Step 2: Sign In using username and paasword.
