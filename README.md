@@ -435,7 +435,8 @@ Sample Output : OK: Current usage:2 of 1000 Virtual Networks
                            --subscription_name="subscriptionName"
                            --coustom_scheme="foo"
                            
-Sample Output : test.testing-azure.test-azure-bus.test-topic.sub.message_count-0 - timestamp ::2019-01-15T16:50:22+05:30    ```
+Sample Output : test.testing-azure.test-azure-bus.test-topic.sub.message_count-0 - timestamp ::2019-01-15T16:50:22+05:30    
+```
 
 **Authentication Setup**
 
