@@ -459,17 +459,17 @@ export AZURE_AUTH_LOCATION=eastus2
 ```
 ## Azure Account Setup
 ```
-Step 1: Create an Azure Account
-Step 2: Sign In using username and paasword.
-Step 3: Select Azure Active Directory
-Step 4: Click on App Registration
-Step 5: Enter App Name and Sign In Url. Click on Create. The generated Application Id is the client id.
-Step 6: Go to Settings and create one key. 
-Step 7: The genarted key value will be the client secret.
-Step 8: Go to All Services and click on subscription name. 
-Step 9: Select Access Control(IAM) and click on "Add role assignment"
-Step10: Select role as Owner/Contributor and select the create App name in the last text field.
-Step 11: We are all set to execute the plugins with the azure credential details.
+- Step 1: Create an Azure Account
+- Step 2: Sign In using username and paasword.
+- Step 3: Select Azure Active Directory
+- Step 4: Click on App Registration
+- Step 5: Enter App Name and Sign In Url. Click on Create. The generated Application Id is the client id.
+- Step 6: Go to Settings and create one key. 
+- Step 7: The genarted key value will be the client secret.
+- Step 8: Go to All Services and click on subscription name. 
+- Step 9: Select Access Control(IAM) and click on "Add role assignment"
+- Step10: Select role as Owner/Contributor and select the create App name in the last text field.
+- Step 11: We are all set to execute the plugins with the azure credential details.
 
 ```
 
